@@ -3,6 +3,12 @@
     wykonano dla: Reven
 ]]--
 
+--Skalowanie
+local sx, sy = guiGetScreenSize() 
+local zoom = sx < 1920 and math.min(2, 1920 / sx) or 1
+
+--Code
+
 local blips = {
     {x, y, z},
 }
